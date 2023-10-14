@@ -1,6 +1,5 @@
 # presentation123
 
-Here is a sample README.md file for the portfolio website that I coded for you:
 
 My Portfolio Website
 This is a simple portfolio website built with HTML, CSS, and JavaScript. It includes the following features:
