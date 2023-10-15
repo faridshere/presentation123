@@ -1,89 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Let Us Cook</title>
 </head>
 <body>
-
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#services">Services</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to Let Us Cook</h1>
+        <p>Your Social Media Marketing Agency</p>
+    </section>
     <section id="about">
-      <h2>About Me</h2>
-      <p>I am a [your job title] with [number] years of experience. I am passionate about [your interests].</p>
+        <h2>About Us</h2>
+        <p>We are a team of experts...</p>
     </section>
-
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <ul>
-        <li>
-          <h3>Project 1</h3>
-          <p>A brief description of your project.</p>
-          <a href="#">View Project</a>
-        </li>
-        <li>
-          <h3>Project 2</h3>
-          <p>A brief description of your project.</p>
-          <a href="#">View Project</a>
-        </li>
-      </ul>
-    </section>
-
     <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Web design</li>
-        <li>Graphic design</li>
-        <li>Content writing</li>
-        <li>SEO</li>
-      </ul>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Service 1</li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+        </ul>
     </section>
-
-    <section id="blog">
-      <h2>Blog</h2>
-      <ul>
-        <li>
-          <h3>My First Blog Post</h3>
-          <p>A brief description of your blog post.</p>
-          <a href="#">Read Post</a>
-        </li>
-        <li>
-          <h3>My Second Blog Post</h3>
-          <p>A brief description of your blog post.</p>
-          <a href="#">Read Post</a>
-        </li>
-      </ul>
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="images/portfolio-item-1.jpg" alt="Project 1">
+            <p>Project 1 description</p>
+        </div>
+        <!-- Add more portfolio items here -->
     </section>
-
     <section id="contact">
-      <h2>Contact Me</h2>
-      <p>If you would like to contact me, please fill out the form below.</p>
-      <form action="/contact" method="post">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="email" placeholder="Your Email">
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
-
-  </main>
-
-  <footer>
-    <p>Copyright &copy; [Your Name] 2023</p>
-    <a href="#" id="back-to-top">Back to Top</a>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
