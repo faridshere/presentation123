@@ -59,3 +59,27 @@ a:hover {
 footer {
   text-align: center;
 }
+
+@media (max-width: 576px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    text-align: left;
+  }
+}
