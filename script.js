@@ -1,103 +1,28 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
 
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    line-height: 1.6;
-}
+        const targetId = this.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        window.scrollTo({
+            top: target.offsetTop - 20,
+            behavior: 'smooth'
+        });
+    });
+});
 
-nav ul {
-    list-style: none;
-}
+// Form submission handling
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+    // You can add code here to handle form submission, e.g., send data to a server or display a thank you message.
+    // For now, we'll just display an alert.
+    alert(`Form submitted with the following data:\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+});
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ff4500;
-}
-
-/* Home section styles */
-#home {
-    text-align: center;
-    padding: 100px 0;
-}
-
-#home h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-/* About section styles */
-#about {
-    background-color: #fff;
-    padding: 40px;
-}
-
-#about h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Services section styles */
-#services ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-/* Portfolio section styles */
-.portfolio-item {
-    margin-bottom: 20px;
-}
-
-.portfolio-item img {
-    max-width: 100%;
-}
-
-/* Contact section styles */
-#contact form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-#contact label,
-#contact input,
-#contact textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-#contact button {
-    background-color: #ff4500;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #ff8c00;
-}
 
