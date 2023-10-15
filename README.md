@@ -6,10 +6,17 @@ This is a simple portfolio website of MY FUTURE COMPANY  built with HTML, CSS, a
 
 - letuscook/
   - index.html
+  - about.html
+  - services.html
+  - portfolio.html
+  - contact.html
   - css/
     - style.css
   - js/
     - script.js
+  - images/
+    - (store your images here)
+
   
 
 
