@@ -1,68 +1,103 @@
-/* style.css */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Global styles */
 body {
-  font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
 }
 
 header {
-  text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-nav {
-  display: inline-block;
-  margin: 0 auto;
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
 nav a {
-  text-decoration: none;
-  padding: 10px;
-  color: black;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-  color: white;
-  background-color: gray;
+    color: #ff4500;
 }
 
-main {
-  padding: 20px;
+/* Home section styles */
+#home {
+    text-align: center;
+    padding: 100px 0;
 }
 
-section {
-  margin-bottom: 20px;
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-h2 {
-  text-align: center;
+/* About section styles */
+#about {
+    background-color: #fff;
+    padding: 40px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+#about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-li {
-  display: inline-block;
-  margin-right: 20px;
+/* Services section styles */
+#services ul {
+    list-style: disc;
+    padding-left: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+/* Portfolio section styles */
+.portfolio-item {
+    margin-bottom: 20px;
 }
 
-a:hover {
-  color: white;
-  background-color: gray;
+.portfolio-item img {
+    max-width: 100%;
 }
 
-footer {
-  text-align: center;
+/* Contact section styles */
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-#back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
+#contact label,
+#contact input,
+#contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
 }
+
+#contact button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #ff8c00;
+}
+
